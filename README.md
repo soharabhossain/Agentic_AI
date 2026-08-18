@@ -23,7 +23,7 @@ Batch 2023 -7th Semester - BMU AY-2026-2027, July-December 2026
 
 **CrewAI_Demo9**: CrewAI Agents with Reasoning & Planning
 
-**CrewAI_Demo10**: Callback in CrewAI
+**CrewAI_Demo10**: Callbacks in CrewAI
 
 **CrewAI_Demo11**: Checkpoints in CrewAI
 
