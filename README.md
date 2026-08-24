@@ -27,5 +27,15 @@ Batch 2023 -7th Semester - BMU AY-2026-2027, July-December 2026
 
 **CrewAI_Demo11**: Checkpoints in CrewAI
 
+**CrewAI_Demo12**: Flows in CrewAI
+
+**CrewAI_Demo13**: Event Processing in CrewAI
+
+**CrewAI_Demo14**: Observability in CrewAI
+
+**CrewAI_Demo15**: Custom Prompts in CrewAI
+
+**CrewAI_Demo16**: Fingerprint in CrewAI
+
 
 ---
