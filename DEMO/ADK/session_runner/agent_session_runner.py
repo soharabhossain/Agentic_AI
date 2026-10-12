@@ -23,7 +23,7 @@ async def call_agent(agent, query):
     session = await session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=SESSION_ID)
     runner = Runner(agent=agent, app_name=APP_NAME, session_service=session_service)
 
-    # Pass user query to hte agent
+    # Pass user query to the agent
     content = types.Content(role='user', parts=[types.Part(text=query)])
 
     # Run the agent within the session context
