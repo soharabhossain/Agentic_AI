@@ -1,0 +1,4 @@
+Invoke the followwing command from the ADK folder to interact with the agent on the terminal
+Make sure that the agent file is stored with the nae `agent.py`
+
+adk run .\multi-agent_patterns_demo\
