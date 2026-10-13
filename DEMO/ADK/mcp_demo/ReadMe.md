@@ -1,8 +1,7 @@
-=============================================================
-MCP + ADK MULTI-AGENT EXAMPLE
-=============================================================
+# MCP + ADK MULTI-AGENT EXAMPLE
 
-Architecture:
+---
+## Architecture:
 
                     MCP SERVER
               ┌────────────────────┐
@@ -22,7 +21,8 @@ CityInfoAgent                   WeatherAgent
 ▼
 Final Response
 
-The example contains:
+---
+## The example contains:
 
 1. A custom MCP server exposing two tools:
    - city_info
@@ -42,10 +42,9 @@ The example contains:
 6. WeatherAgent reads that result and produces
    the final response.
 
-=============================================================
-PROJECT STRUCTURE
-=============================================================
-
+---
+# PROJECT STRUCTURE
+---
 mcp_adk_demo/
 │
 ├── .env
@@ -56,15 +55,13 @@ mcp_adk_demo/
 ├── **init**.py
 └── agent.py
 
-=============================================================
-INSTALL
-=============================================================
+---
+# INSTALL
 
 pip install google-adk mcp python-dotenv
 
-=============================================================
-.env
-=============================================================
+---
+# .env File
 
 GOOGLE_API_KEY=your_google_api_key
 
