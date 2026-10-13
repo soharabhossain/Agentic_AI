@@ -15,9 +15,9 @@ Architecture:
           ┌─────────────┴─────────────┐
           ▼                           ▼
 
-CityInfoAgent WeatherAgent
-│ │
-└──────── Shared State ─────┘
+CityInfoAgent                   WeatherAgent
+│                                   │
+└────────     Shared State     ─────┘
 │
 ▼
 Final Response
