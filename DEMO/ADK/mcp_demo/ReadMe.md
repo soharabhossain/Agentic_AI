@@ -44,16 +44,16 @@
 ---
 # PROJECT STRUCTURE
 ---
-mcp_adk_demo/
-│
-├── .env
-│
-├── mcp_server.py
-│
-└── adk_agent/
-├── **init**.py
-└── agent.py
-
+    mcp_adk_demo/
+    │
+    ├── .env
+    │
+    ├── mcp_server.py
+    │
+    └── adk_agent/
+    ├── **init**.py
+    └── agent.py
+    
 ---
 # INSTALL
 
