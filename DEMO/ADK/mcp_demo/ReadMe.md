@@ -13,13 +13,12 @@
                         │
           ┌─────────────┴─────────────┐
           ▼                           ▼
-
-CityInfoAgent                   WeatherAgent
-│                                   │
-└────────     Shared State     ─────┘
-│
-▼
-Final Response
+    CityInfoAgent                   WeatherAgent
+     │                                   │
+     └────────     Shared State     ─────┘
+                       │
+                       ▼
+                  Final Response
 
 ---
 ## The example contains:
