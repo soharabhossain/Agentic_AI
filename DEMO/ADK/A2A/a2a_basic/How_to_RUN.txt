@@ -1,10 +1,9 @@
-Navigate to the A2A folder
-
 Open a terminal, activate the virtual env.
+Navigate to 'A2A/a2a_basic/' folder.
 
 Run the following command to run the remote agent (prime_agent):
 
-# adk api_server --a2a --port 8001 ./a2a_basic/remote_a2a
+# adk api_server --a2a --port 8001 ./remote_a2a
 
 
 Open a new terminal, activate the virtual env.
