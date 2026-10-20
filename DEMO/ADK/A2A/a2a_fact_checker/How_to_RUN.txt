@@ -1,0 +1,26 @@
+Navigate to the parent `A2A/a2a_fact_checker` folder
+
+Open a terminal, activate the virtual env.
+
+Run the following command to run the remote agent:
+
+# python -m uvicorn fact_checker_remote.agent:a2a_app --host localhost --port 8001
+
+
+Open a new terminal, activate the virtual env.
+Navigate to the parent `A2A/a2a_fact_checker/root_agent` folder
+
+run `adk web` command to run the local agent (root_agent)
+
+# adk web
+
+In the web UI provide your query.
+
+Tell me an interesting fact about Jaipur.
+An interesting fact about Charlie Chaplin.
+
+
+# You may verify that the agent card is automatically available at:
+http://localhost:8001/.well-known/agent-card.json
+
+
