@@ -62,5 +62,5 @@ Open in the web browser:
 
 `reports/eval_results_report.html`
 
-Note: You may verrify the EvalSet Pydantic class from the official documentation of ADK from the following source:
+Note: You can verify the EvalSet Pydantic class from the official documentation of ADK from the following source:
 https://github.com/google/adk-python/blob/main/src/google/adk/evaluation/eval_set.py
