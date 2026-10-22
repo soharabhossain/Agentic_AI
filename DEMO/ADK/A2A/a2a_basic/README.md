@@ -60,7 +60,7 @@ The A2A Basic sample consists of:
 2. **Run the Main Agent**:
    ```bash
    # In a separate terminal, run the adk web server
-   adk web contributing/samples/
+   adk web 
    ```
 
 ### Example Interactions
