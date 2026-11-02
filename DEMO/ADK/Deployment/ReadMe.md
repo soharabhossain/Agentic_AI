@@ -2,14 +2,17 @@
 
 ---
 
-# Environment setup on Google Cloud Platform
+## Environment setup on Google Cloud Platform
 
 i. Sign-in to the Google Cloud Console
+
 ii. Create a New Project or reuse an existing one.
+
 iii. Note the project ID.
+
 iv. Enable Billing.
 
-# Start Cloud Shell
+## Start Cloud Shell
 
 ---
 
@@ -21,17 +24,17 @@ cloudshell edit requirements.txt
 
 You may use the CloudShell CLI to run the following commands.
 
-# List GCP projects
+### List GCP projects
 
 gcloud projects list | awk '/PROJECT_ID/{print $2}'
 
-# Set project
+### Set project
 
 gcloud config set project [YOUR-PROJECT-ID]
 
 ---
 
-# Setup your Environment - Enable APIs and set environment variables and all necessary services:
+## Setup your Environment - Enable APIs and set environment variables and all necessary services:
 
 You may use the CloudShell CLI to run the commands.
 
@@ -43,7 +46,7 @@ gcloud services enable \
 
 ---
 
-# Set Environment variables for your current project ID, project number and also create a dedicated service account for your project.
+## Set Environment variables for your current project ID, project number and also create a dedicated service account for your project.
 
 export PROJECT_ID=$(gcloud config get-value project)
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
@@ -57,7 +60,7 @@ gcloud iam service-accounts create ${SA_NAME} \
 
 ---
 
-# Grant Vertex AI User role so it can talk to Gemini models
+## Grant Vertex AI User role so it can talk to Gemini models
 
 gcloud projects add-iam-policy-binding ${PROJECT_ID} \
     --member="serviceAccount:${SERVICE_ACCOUNT}" \
@@ -71,7 +74,7 @@ gcloud projects get-iam-policy ${PROJECT_ID} \
 
 ---
 
-# Create the project directory.
+## Create the project directory.
 
 This command creates project root folder 'coder' for the agent's source code.
 
@@ -86,7 +89,7 @@ Create all the files inside this folder.
 
 +++++++++++++++++++++++++++++++++++++++
 
-# Run the Deployment Command from CloudShell CLI
+## Run the Deployment Command from CloudShell CLI
 
 uvx --from google-adk==1.14.0 \
 adk deploy cloud_run \
@@ -114,7 +117,7 @@ Open it in a browser.
 
 ---
 
-# Clean up Environment - Delete the Cloud Run service itself, the temporary files in /tmp, and the Artifact Registry container repository, etc.
+## Clean up Environment - Delete the Cloud Run service itself, the temporary files in /tmp, and the Artifact Registry container repository, etc.
 
 ### Delete the Service
 
