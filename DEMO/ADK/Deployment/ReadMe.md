@@ -38,11 +38,7 @@ gcloud config set project [YOUR-PROJECT-ID]
 
 You may use the CloudShell CLI to run the commands.
 
-gcloud services enable \
- run.googleapis.com \
- artifactregistry.googleapis.com \
- cloudbuild.googleapis.com \
- aiplatform.googleapis.com
+gcloud services enable  run.googleapis.com  artifactregistry.googleapis.com  cloudbuild.googleapis.com  aiplatform.googleapis.com
 
 ---
 
